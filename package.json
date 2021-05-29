@@ -7,6 +7,11 @@
     "build": "next build",
     "start": "next start"
   },
+  "devDependencies": {
+    "sass": "^1.34.0",
+    "bootstrap": "4.6.0",
+    "react-bootstrap": "^1.6.0"
+  },
   "dependencies": {
     "next": "10.2.3",
     "react": "17.0.2",
