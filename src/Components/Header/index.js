@@ -5,11 +5,11 @@ import { HeaderInfo } from "./HeaderInfo";
 import styles from './Header.module.scss';
 
 export const Header = () => {
-    return (
-        <div className={styles.HeroImage}>
-            <HeaderNavBar />
-            <HeaderContentMain />
-            <HeaderInfo />
-        </div>
-    )
+  return (
+    <div className={styles.HeroImage}>
+      <HeaderNavBar />
+      <HeaderContentMain />
+      <HeaderInfo />
+    </div>
+  )
 }

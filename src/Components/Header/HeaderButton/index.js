@@ -1,9 +1,9 @@
 import styles from './HeaderButton.module.scss';
 
-export const HeaderButton = () => {
-    return (
-        <button className={styles.Button}>
-            <a href="#">click</a>
-        </button>
-    )
-}
+export const HeaderButton = () => (
+  <>
+    <button className={styles.Button}>
+      <a href="#">click</a>
+    </button>
+  </>
+);

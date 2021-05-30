@@ -1,28 +1,28 @@
 .menuContainer {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 40px 0;
+  position: relative;
+
+  img {
+    width: 64px;
+  }
+
+  ul.navMenuRow {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: transparent;
-    padding: 40px 0;
-    position: relative;
-  
-    img {
-      width: 64px;
-    }
-  
-    ul.navMenuRow {
-      display: flex;
-  
-      li.navMenuItem {
+
+    li.navMenuItem {
+      text-decoration: none;
+
+      a {
+        padding-left: 45px;
+        color: #fff;
         text-decoration: none;
-        
-        a {
-          padding-left: 45px;
-          color: #fff;
-          text-decoration: none;
-        }
       }
     }
   }
+}

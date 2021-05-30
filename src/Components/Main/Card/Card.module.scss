@@ -1,0 +1,67 @@
+.BoxCard {
+  width: 368px;
+  padding: 0 15px !important;
+
+  // @media (max-width: 424px ) {
+  //   padding: 0;
+  // }
+
+  .CardContainer {
+    border: none !important;
+    border-radius: 8px !important;
+    
+    .CardImg {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+
+    .CardBodyContainer {
+      max-height: 153px;
+      min-height: 153px;
+      padding: 10px;
+
+      @media (min-width: 1025px) and (max-width: 1440px) {
+        padding: 1.25rem;
+      }
+
+      @media (min-width: 768px) and (max-width: 1040px) {
+        padding: 1rem;
+      }
+
+      .CardTitle {
+        color: #3E4D60;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        display: flex;
+        align-items: flex-end;
+        
+        @media (min-width: 1024px) and (max-width: 1432px) {
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        @media (min-width: 320px) and (max-width: 423px) {
+          font-size: 17px;
+        }
+      }
+
+      .CardText {
+        color: #8C94A8;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: flex-end;
+
+        @media (min-width: 320px) and (max-width: 423px) {
+          line-height: 16px !important;
+        }
+      }
+    }
+  }
+}
