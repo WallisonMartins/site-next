@@ -1,0 +1,42 @@
+.ContainerAbout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: space-between;
+  grid-gap: 30px;
+  padding-bottom: 58px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .ImageBox {
+    img {
+      border-radius: 8px;
+    }
+  }
+
+  .TextAbout {
+    h2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 39px;
+      display: flex;
+      align-items: flex-end;
+      text-transform: uppercase;
+      color: #4A90E2;
+    }
+
+    p {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+
+      color: #3E4D60;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import { Header } from '../Components/Header';
 import { Main } from '../Components/Main';
+import { Footer } from '../components/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
 
       <Header />
       <Main />
+      <Footer />
     </>
   )
 }

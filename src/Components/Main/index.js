@@ -1,8 +1,10 @@
 import { Container } from 'react-bootstrap';
 import { MainCarousel } from './MainCarousel';
+import { About } from './About';
 
 export const Main = () => (
-  <Container style={{ height: '900px' }}>
+  <Container>
     <MainCarousel />
+    <About />
   </Container>
 );
