@@ -12,9 +12,9 @@ export const HeaderNavBar = () => {
   const handleClick = () => setClick(!click);
 
   const changeNavBackground = () => {
-    if(window.scrollY >= 50) {
-      setNavbar(false)
-      setClick(false)
+    if(window.scrollY < 60) {
+      setNavbar(false);
+      setClick(false);
     } else {
       setNavbar(true);
     }
@@ -27,7 +27,7 @@ export const HeaderNavBar = () => {
 
   return (
     <Container>
-      <div className={navbar ? `${styles.menuContainer}` : `${styles.menuContainerActive}`}>
+      <div className={navbar ? `${styles.menuContainerActive}` : `${styles.menuContainer}`}>
         <img src="/img/brand.png" alt="Joyjet" />
         <div className={styles.containerNav}>
           <ul className={!click ? `${styles.navMenuRow}` : `${styles.navMenuRowActive}`}>

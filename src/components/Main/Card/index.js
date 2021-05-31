@@ -13,7 +13,6 @@ export const Cards = () => {
 
   useEffect(() => {
     setData(DataCard);
-    console.log(DataCard);
   }, []);
 
   const settings = {
@@ -59,7 +58,7 @@ export const Cards = () => {
   return (
     <Slider {...settings}>
       {data.map((item) => (
-        <div className={styles.BoxCard}>
+        <div className={styles.BoxCard} key={item.id}>
           <Link href="/">
             <Card className={styles.CardContainer} key={item.id}>
               <Card.Img
