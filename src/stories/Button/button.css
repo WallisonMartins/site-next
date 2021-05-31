@@ -1,0 +1,26 @@
+.button-component {
+  height: 51px;
+  width: 123px;
+  background-color: #4a90e2;
+  border-radius: 5px;
+  border: none;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.button-component:hover {
+  transition: all .5s ease;
+  box-shadow: rgba(255, 255, 255, .2) 0px 0px 0px 5px;
+}
+
+a {
+  color: #fff;
+  font-family: 'Popins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all .5s ease;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
