@@ -1,14 +1,38 @@
 .ContainerFooter {
-  border-top: 1px solid #e6e6e6;;
+  border-top: 1px solid #e6e6e6;
   height: 100px;
+  
+
+  @media (max-width: 960px) {
+    border: none;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    &:before {
+      content: "";
+      height: 1px;
+      width: 90%;
+      background-color: #e6e6e6;
+      position: absolute;
+      top: 0;
+    }
+  }
 
   p {
     padding: 10px 0 0 0;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
     color: #908C8C;
     opacity: 0.55;
+    cursor: pointer;
+
+    @media (max-width: 960px) {
+      text-align: center;
+      max-width: 140px;
+    }
   }
 }

@@ -38,14 +38,41 @@ ul {
 }
 
 
+.container, .container-fluid, .container-xl, 
+.container-lg, .container-md, .container-sm {
+  @media (max-width: 960px) {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+
 
 /* Slick Carousel */
-// .slick-slide,
-// .slick-slide.slick-active,
-// .slick-slide.slick-cloned {
-//   margin: 0 10px !important;
-// }
 
+.slick-track {
+  @media (max-width: 960px) {
+    left: -10px !important;
+  }
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  @media (max-width: 960px) {
+    width: 100vw;
+  }
+}
+
+.card {
+  margin: 10px;
+
+  @media (max-width: 960px) {
+    margin: 15px;
+  }
+}
 
 .slick-prev {
 	left: -40px !important;
@@ -89,11 +116,11 @@ button.slick-next:before {
 }
 
 .slick-dots li {
-  margin: 30px 5px 0 !important;
+  margin: 20px 5px 0 !important;
 }
 
 .slick-dots li button:before {
-  font-size: 20px !important;
+  font-size: 15px !important;
 }
 
 .slick-dots li.slick-active button:before {

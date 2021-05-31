@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { DataCard } from './DataCard';
 
@@ -59,17 +60,19 @@ export const Cards = () => {
     <Slider {...settings}>
       {data.map((item) => (
         <div className={styles.BoxCard}>
-          <Card className={styles.CardContainer} key={item.id}>
-            <Card.Img
-              className={styles.CardImg}
-              src={item.img}
-              height="309px"
-            />
-            <Card.Body className={styles.CardBodyContainer}>
-              <Card.Title className={styles.CardTitle}>{item.title}</Card.Title>
-              <Card.Text className={styles.CardText}>{item.text}</Card.Text>
-            </Card.Body>
-          </Card>
+          <Link href="/">
+            <Card className={styles.CardContainer} key={item.id}>
+              <Card.Img
+                className={styles.CardImg}
+                src={item.img}
+                height="309px"
+              />
+              <Card.Body className={styles.CardBodyContainer}>
+                <Card.Title className={styles.CardTitle}>{item.title}</Card.Title>
+                <Card.Text className={styles.CardText}>{item.text}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
         </div>
       ))}
     </Slider>

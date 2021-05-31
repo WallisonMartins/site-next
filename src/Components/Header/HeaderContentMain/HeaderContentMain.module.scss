@@ -5,6 +5,15 @@
   margin: 2% 0 6% 0;
   position: relative;
 
+  @media (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 0 6% 0;
+    position: relative;
+    padding: 0 15px;
+  }
+
   h1, p {
     font-family: 'Popins', sans-serif;
     color: #fff;
@@ -15,6 +24,13 @@
     font-weight: 700;
     position: relative;
 
+    @media (max-width: 960px) {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 67px;
+    }
+
     &:after {
       content: "";
       position: absolute;
@@ -24,6 +40,15 @@
       bottom: 29px;
       border-radius: 50px;
       margin-left: 5px;
+
+      @media (max-width: 960px) {
+        height: 8px;
+        width: 8px;
+        background-color: #4a90e2;
+        bottom: 16px;
+        border-radius: 50px;
+        margin-left: 5px;
+      }
     }
   }
 
@@ -31,5 +56,17 @@
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.1rem;
+
+    @media (max-width: 960px) {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 1px;
+      max-width: 97%;
+      padding: 15px 0;
+    }
   }
 }

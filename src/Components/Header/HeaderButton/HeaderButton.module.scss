@@ -6,10 +6,17 @@
   border: none;
   margin-top: 4%;
 
+  &:hover {
+    transition: all .5s ease;
+    box-shadow: rgba($color: #fff, $alpha: .2) 0px 0px 0px 5px;
+  }
+
   a {
     color: #fff;
     font-family: 'Popins', sans-serif;
     font-size: 18px;
     font-weight: 600;
+    transition: all .5s ease;
+    letter-spacing: 2px;
   }
 }
