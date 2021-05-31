@@ -1,0 +1,47 @@
+.box-card {
+  width: 368px;
+}
+
+.card-container {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-container:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.9s ease;
+}
+
+.card-img {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.card-body {
+  max-height: 153px;
+  min-height: 153px;
+  padding: 10px;
+}
+
+.card-title {
+  color: #3E4D60;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-text {
+  color: #8C94A8;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+}
