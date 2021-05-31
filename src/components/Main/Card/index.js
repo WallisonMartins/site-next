@@ -31,6 +31,7 @@ export const Cards = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
+          autoplay: true,
         },
       },
       {
@@ -41,6 +42,7 @@ export const Cards = () => {
           initialSlide: 1,
           dots: true,
           arrows: false,
+          autoplay: true,
         },
       },
       {
@@ -50,6 +52,7 @@ export const Cards = () => {
           slidesToScroll: 1,
           dots: true,
           arrows: false,
+          autoplay: true,
         },
       },
     ],
