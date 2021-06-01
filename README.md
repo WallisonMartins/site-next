@@ -18,7 +18,7 @@ Prerequisites: npm / yarn
 # clone repository
 git clone https://github.com/WallisonMartins/site-next.git
 
-# enter the front end web project folder
+# enter the site-next folder
 cd site-next
 
 # install dependencies
@@ -51,7 +51,7 @@ Pré-requisitos: npm / yarn
 # clonar repositório
 git clone https://github.com/WallisonMartins/site-next.git
 
-# entrar na pasta do projeto front end web
+# entrar na pasta do projeto site-next
 cd site-next
 
 # instalar dependências
